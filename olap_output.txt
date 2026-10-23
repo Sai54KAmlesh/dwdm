@@ -1,0 +1,43 @@
+-- Roll-up: City -> Region
+region  total_cost
+ South  15379349.0
+  West  10709414.0
+ North   6569534.0
+  East   4514851.0 
+
+-- Drill-down: Year -> Quarter
+ year  quarter  total_cost
+ 2022        1   3226796.0
+ 2022        2   3196629.0
+ 2022        3   2810754.0
+ 2022        4   2985027.0
+ 2023        1   3017197.0
+ 2023        2   2911005.0
+ 2023        3   3306167.0
+ 2023        4   3021578.0
+ 2024        1   3191754.0
+ 2024        2   3187207.0
+ 2024        3   2971419.0
+ 2024        4   3347615.0 
+
+-- Slice: Year = 2023
+vehicle_type  total_cost
+         Van   4303231.0
+       Truck   3090347.0
+         Bus   2575377.0
+         Car   2286992.0 
+
+-- Dice: Region and vehicle type sub-cube
+region vehicle_type  total_cost
+ South          Bus   3488431.0
+ South        Truck   2532707.0
+  West          Bus   2525277.0
+  West        Truck   2902477.0 
+
+-- Pivot: regions as columns
+vehicle_type     south      west     north      east
+         Bus 3488431.0 2525277.0 1289149.0  684700.0
+         Car 3375061.0 1979463.0 1457659.0  270319.0
+       Truck 2532707.0 2902477.0 1782782.0 1712813.0
+         Van 5983150.0 3302197.0 2039944.0 1847019.0 
+

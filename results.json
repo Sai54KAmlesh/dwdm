@@ -1,0 +1,148 @@
+{
+ "classification": {
+  "Decision Tree": {
+   "accuracy": 0.74,
+   "f1_macro": 0.703
+  },
+  "Random Forest": {
+   "accuracy": 0.811,
+   "f1_macro": 0.783
+  }
+ },
+ "confusion": [
+  [
+   105,
+   33,
+   0
+  ],
+  [
+   14,
+   251,
+   17
+  ],
+  [
+   0,
+   32,
+   55
+  ]
+ ],
+ "importance": {
+  "engine_temp_c": 0.224,
+  "harsh_events": 0.173,
+  "age": 0.169,
+  "odometer_km": 0.143,
+  "days_since_last_service": 0.089,
+  "avg_daily_km": 0.088
+ },
+ "clustering": {
+  "silhouette": {
+   "3": 0.252,
+   "4": 0.258,
+   "5": 0.255,
+   "6": 0.236
+  },
+  "k": 4,
+  "profile": {
+   "Extreme wear": {
+    "avg_daily_km": 177.11,
+    "idle_hours": 4.46,
+    "harsh_events": 6.83,
+    "engine_temp_c": 94.84,
+    "age": 6.67,
+    "corrective_rate": 0.55,
+    "total_cost": 400869.79
+   },
+   "High wear": {
+    "avg_daily_km": 139.62,
+    "idle_hours": 3.37,
+    "harsh_events": 4.29,
+    "engine_temp_c": 91.46,
+    "age": 7.19,
+    "corrective_rate": 0.45,
+    "total_cost": 320901.35
+   },
+   "Low wear": {
+    "avg_daily_km": 153.85,
+    "idle_hours": 2.56,
+    "harsh_events": 2.1,
+    "engine_temp_c": 87.31,
+    "age": 3.91,
+    "corrective_rate": 0.28,
+    "total_cost": 240887.78
+   },
+   "Moderate wear": {
+    "avg_daily_km": 121.16,
+    "idle_hours": 3.97,
+    "harsh_events": 5.76,
+    "engine_temp_c": 91.56,
+    "age": 2.05,
+    "corrective_rate": 0.35,
+    "total_cost": 281913.04
+   }
+  },
+  "sizes": {
+   "High wear": 34,
+   "Low wear": 32,
+   "Extreme wear": 28,
+   "Moderate wear": 26
+  }
+ },
+ "rules": {
+  "n": 36,
+  "top": [
+   {
+    "antecedents": "Alternator, Battery",
+    "consequents": "Starter Motor",
+    "support": 0.05,
+    "confidence": 0.842,
+    "lift": 11.084
+   },
+   {
+    "antecedents": "Starter Motor",
+    "consequents": "Alternator, Battery",
+    "support": 0.05,
+    "confidence": 0.656,
+    "lift": 11.084
+   },
+   {
+    "antecedents": "Alternator",
+    "consequents": "Battery, Starter Motor",
+    "support": 0.05,
+    "confidence": 0.627,
+    "lift": 10.782
+   },
+   {
+    "antecedents": "Battery, Starter Motor",
+    "consequents": "Alternator",
+    "support": 0.05,
+    "confidence": 0.856,
+    "lift": 10.782
+   },
+   {
+    "antecedents": "Alternator",
+    "consequents": "Starter Motor",
+    "support": 0.062,
+    "confidence": 0.783,
+    "lift": 10.306
+   },
+   {
+    "antecedents": "Starter Motor",
+    "consequents": "Alternator",
+    "support": 0.062,
+    "confidence": 0.818,
+    "lift": 10.306
+   }
+  ]
+ },
+ "prediction": {
+  "Linear Regression": {
+   "MAE_days": 5.51,
+   "R2": 0.593
+  },
+  "Random Forest": {
+   "MAE_days": 5.77,
+   "R2": 0.549
+  },
+  "best": "Linear Regression"
+ }
+}

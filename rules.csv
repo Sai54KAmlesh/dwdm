@@ -1,0 +1,37 @@
+antecedents,consequents,support,confidence,lift
+"Alternator, Battery",Starter Motor,0.05,0.842,11.084
+Starter Motor,"Alternator, Battery",0.05,0.656,11.084
+Alternator,"Battery, Starter Motor",0.05,0.627,10.782
+"Battery, Starter Motor",Alternator,0.05,0.856,10.782
+Alternator,Starter Motor,0.062,0.783,10.306
+Starter Motor,Alternator,0.062,0.818,10.306
+"Alternator, Starter Motor",Battery,0.05,0.802,10.289
+Battery,"Alternator, Starter Motor",0.05,0.639,10.289
+Starter Motor,Battery,0.058,0.766,9.835
+Battery,Starter Motor,0.058,0.747,9.835
+Alternator,Battery,0.059,0.745,9.567
+Battery,Alternator,0.059,0.759,9.567
+"Coolant, Radiator",Thermostat,0.048,0.797,9.233
+"Radiator, Thermostat",Coolant,0.048,0.79,9.211
+"Coolant, Thermostat",Radiator,0.048,0.76,9.01
+Coolant,Thermostat,0.064,0.741,8.592
+Thermostat,Coolant,0.064,0.737,8.592
+"Brake Pads, Tyres",Brake Fluid,0.061,0.785,8.511
+Brake Fluid,"Brake Pads, Tyres",0.061,0.663,8.511
+Thermostat,Radiator,0.061,0.709,8.403
+Radiator,Thermostat,0.061,0.725,8.403
+Radiator,Coolant,0.061,0.719,8.384
+Coolant,Radiator,0.061,0.707,8.384
+Brake Pads,"Brake Fluid, Tyres",0.061,0.611,8.37
+"Brake Fluid, Tyres",Brake Pads,0.061,0.838,8.37
+Tyres,"Brake Fluid, Brake Pads",0.061,0.608,8.273
+"Brake Fluid, Brake Pads",Tyres,0.061,0.832,8.273
+Brake Fluid,Brake Pads,0.073,0.797,7.96
+Brake Pads,Brake Fluid,0.073,0.734,7.96
+Tyres,Brake Fluid,0.073,0.725,7.868
+Brake Fluid,Tyres,0.073,0.791,7.868
+Brake Pads,Tyres,0.078,0.778,7.737
+Tyres,Brake Pads,0.078,0.775,7.737
+"Air Filter, Engine Oil",Oil Filter,0.188,0.812,1.556
+Air Filter,"Engine Oil, Oil Filter",0.188,0.67,1.543
+"Air Filter, Oil Filter",Engine Oil,0.188,0.858,1.524
